@@ -2,8 +2,7 @@ import Navbar from "../Navbar/Index";
 import Footer from "../Footer/Index";
 import { useState } from "react";
 import "./Index.scss";
-import data from "../../data.json";
-const themeClass = data.themeClass;
+import { themeClass } from "../../data";
 
 const Layout = ({ children }) => {
   const [bgclass, setBgclass] = useState(themeClass[0]);
