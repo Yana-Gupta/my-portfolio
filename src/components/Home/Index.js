@@ -13,7 +13,7 @@ const Home = () => {
             I am a Full Stack Developer. I am currently doing my B.tech in
             Information Techology at IIITM Gwalior.
           </p>
-          <a href="#" className="animated-button">
+          <a href="/" className="animated-button">
             <span></span>
             <span></span>
             <span></span>
