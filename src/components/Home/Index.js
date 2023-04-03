@@ -5,7 +5,7 @@ import "./Index.scss";
 const Home = () => {
   return (
     <div className="pl-24 my-8">
-      <div className="flex flex-row min-h-[70vh]">
+      <div className="flex flex-row min-h-[80vh] mt-20">
         <div className="w-1/2">
           <span>Hi👋</span>
           <h1 className="text-6xl font-semibold py-2">I'm Yana</h1>
