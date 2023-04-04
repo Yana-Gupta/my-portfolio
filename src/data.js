@@ -23,6 +23,7 @@ import {
   SiNetlify,
   SiFirebase,
   SiCplusplus,
+  SiMui,
 } from "react-icons/si"
 import { SiLinkedin } from "react-icons/si"
 
@@ -48,26 +49,65 @@ const themeClass = [
 const project = [
   {
     name: "MBA Department Website",
-    description:
-      "This is a website for MBA department of a university. The website is made using ReactJS and TailwindCSS.",
+    description: "This is a website for MBA department of a university. ",
     image: IIITM1,
     live: "https://mba-iiitm.vercel.app/",
+    techstack: [
+      {
+        name: "NextJS",
+        icon: <SiNextdotjs />,
+        color: "#ff0000",
+      },
+      {
+        name: "Material UI",
+        icon: <SiMui />,
+        color: "#1565C0",
+      },
+      {
+        name: "TailwindCSS",
+        icon: <SiTailwindcss />,
+        color: "#38b2ac",
+      },
+    ],
   },
   {
     name: "Real Estate Frontend Website",
     description:
-      "This is a website for Real Estate. The website is made using ReactJS, material UI and SASS.",
+      "This is a website for Real Estate. This website shows the basic information about the property.",
     image: REALESTATE,
     live: "https://real-estate-frontend-lemon.vercel.app/",
     code: "https://github.com/Yana-Gupta/real-estate-frontend",
+    techstack: [
+      {
+        name: "ReactJS",
+        icon: <SiReact />,
+        color: "#61DAFB",
+      },
+      {
+        name: "Material UI",
+        icon: <SiMui />,
+        color: "#1565C0",
+      },
+    ],
   },
   {
     name: "Portfolio Website",
-    description:
-      "This is a portfolio website. The website is made using ReactJS and SASS.",
+    description: "This is a portfolio website.",
     image: PORTFOLIO,
     live: "https://velvety-travesseiro-d69516.netlify.app/",
     code: "https://github.com/Yana-Gupta/portfolio",
+    techstack: [
+      {
+        name: "ReactJS",
+        icon: <SiReact />,
+        color: "#61DAFB",
+      },
+      {
+        name: "SASS",
+        icon: <SiSass />,
+        color: "#CC6699",
+      },
+    ],
   },
 ]
 

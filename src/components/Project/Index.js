@@ -2,6 +2,7 @@ import React from "react"
 import { project } from "../../data"
 import "./Index.scss"
 import { Link } from "react-router-dom"
+import SkillIcon from "../Skillicon/Index"
 
 const Project = () => {
   return (
@@ -40,6 +41,17 @@ const Project = () => {
                       View Code
                     </Link>
                   )}
+                  <div
+                    id="techstack"
+                    className="flex flex-col align-center justify-center"
+                  >
+                    <h1 className="text-xl font-normal pt-4">TechStacks: </h1>
+                    <div className="grid grid-cols-6 align-center">
+                      {project.techstack.map((tech, index) => {
+                        return <SkillIcon item={tech} />
+                      })}
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="w-full lg:w-1/2 px-4">
@@ -81,6 +93,17 @@ const Project = () => {
                     View Code
                   </Link>
                 )}
+                <div
+                  id="techstack"
+                  className="flex flex-col align-center justify-center"
+                >
+                  <h1 className="text-xl font-normal pt-4">TechStacks: </h1>
+                  <div className="grid grid-cols-6 align-center ">
+                    {project.techstack.map((tech, index) => {
+                      return <SkillIcon key={index} item={tech} />
+                    })}
+                  </div>
+                </div>
               </div>
             </div>
             <div className="w-full lg:w-1/2 px-4">

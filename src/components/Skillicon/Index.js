@@ -1,13 +1,12 @@
 import "./Index.scss"
 import { IconContext } from "react-icons"
-import { useState } from "react"
 
-const SkillIcon = ({ item }) => {
-  const [show, setShow] = useState(false)
+const SkillIcon = ({ item, size }) => {
+  if(size === undefined) size = "40"
   return (
-    <IconContext.Provider value={{ size: "40" }}>
+    <IconContext.Provider value={{ size: size }}>
       <button
-        className="my-5 icon"
+        className="my-4 icon"
         style={{ color: item.color, cursor: "default" }}
       >
         <div className="h-2">
