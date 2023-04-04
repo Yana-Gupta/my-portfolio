@@ -14,7 +14,7 @@ const Home = () => {
         <div className="mt-40 items-center w-full lg:w-1/2 lg:h-full lg:mt-0">
           <span>Hi👋</span>
           <h1 className="text-8xl font-semibold py-2">I'm Yana</h1>
-          <p className="text-5xl font-light py-2">
+          <p className="text-3xl font-light py-2">
             I am a Full Stack Developer. I am currently doing my B.tech in
             Information Techology at IIITM Gwalior.
           </p>

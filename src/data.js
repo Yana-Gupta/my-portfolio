@@ -24,6 +24,8 @@ import {
   SiFirebase,
   SiCplusplus,
 } from "react-icons/si"
+import { SiLinkedin } from "react-icons/si"
+
 
 const themeClass = [
   {
@@ -37,6 +39,10 @@ const themeClass = [
   {
     name: "melon",
     color: "#F73BC5",
+  },
+  {
+    name: "olive",
+    color: "#2C3A34",
   },
 ]
 
@@ -213,4 +219,20 @@ const language = [
     color: "#FFCA28",
   },
 ]
-export { themeClass, project, language }
+
+const socials = [
+  {
+    name: "LinkedIn",
+    icon: <SiLinkedin />,
+    url: "https://www.linkedin.com/in/Yana-Gupta/",
+    color: "#0072b1",
+  },
+  {
+    name: "GitHub",
+    icon: <SiGithub />,
+    url: "https://github.com/Yana-Gupta",
+    color: "#171515",
+  },
+]
+
+export { themeClass, project, language, socials}
