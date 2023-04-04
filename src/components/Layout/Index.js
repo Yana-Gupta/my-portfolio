@@ -9,7 +9,8 @@ const Layout = ({ children }) => {
   return (
     <div className={`text-white overflow-x-hidden ${bgclass.name}`}>
       <Navbar />
-      <div className="color-palette flex flex-col">
+      <div className="color-palette flex flex-col items-center pt-2">
+        <span className="h-28 w-0.5 bg-gray-200"></span>
         {themeClass.map((color, index) => {
           return (
             <button

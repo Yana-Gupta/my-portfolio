@@ -1,0 +1,12 @@
+#item-name{
+    display: none;
+    z-index: 99999;
+    position: relative;
+    bottom: -50px;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+#item-name:hover{
+    display: block;
+}

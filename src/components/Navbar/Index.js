@@ -4,7 +4,7 @@ import "./Index.scss";
 const Navbar = () => {
   return (
     <nav className="flex h-28 items-center justify-between bg-grey-700">
-      <h1 className="text-3xl font-bold px-20">Yana Gupta</h1>
+      <h1 className="text-3xl font-bold px-20 uppercase">Portfolio</h1>
       <div className="px-20">
         <NavLink to="/" className="px-8 font-normal text-xl" activeclassname="active">
           Home
