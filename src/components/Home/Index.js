@@ -30,9 +30,9 @@ const Home = () => {
       </div>
       <div id="techstack" className="">
         <h1 className="text-6xl font-semibold py-2">TechStacks 👩‍💻</h1>
-        {language.map((item) => {
+        {/* {language.map((item) => {
           return <span> {item.icon} </span>
-        })}
+        })} */}
       </div>
     </div>
   )
