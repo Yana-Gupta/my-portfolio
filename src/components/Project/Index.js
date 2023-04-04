@@ -13,11 +13,11 @@ const Project = () => {
         return (
           <div
             key={index}
-            className={`flex lg: ${
-              index % 2 ? "flex-row" : "flex-row-reverse"
+            className={`flex flex-col-reverse lg:${
+              index % 2 ? `flex-row` : `flex-row-reverse`
             }  pl-12 py-8 text-center`}
           >
-            <div className="lg: w-1/2 mx-4">
+            <div className="w-full lg: w-1/2 mx-4">
               <h1 className="text-2xl font-semibold py-4">{project.name}</h1>
               <p className="py-4">{project.description}</p>
               <div className="mx-auto">
@@ -41,12 +41,8 @@ const Project = () => {
                 )}
               </div>
             </div>
-            <div className="lg: w-1/2 px-4">
-              <img
-                className="rounded-md"
-                src={project.image}
-                alt=""
-              />
+            <div className="w-full lg: w-1/2 px-4">
+              <img className="rounded-md" src={project.image} alt="" />
             </div>
           </div>
         )

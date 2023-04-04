@@ -1,23 +1,8 @@
 .graphic {
-    width: 400px;
-    height: 400px;
+    height: 500px;
+    width: 500px;
+    margin: auto;
 }
-
-@media screen and (max-width: 900px) {
-    .graphic {
-        width: 350px;
-        height: 350px;
-    }
-}
-    
-@media screen and (max-width: 768px) {
-    .graphic {
-        width: 300px;
-        height: 300px;
-    }
-}
-    
-
 
 .animated-button {
     background: linear-gradient(-30deg, #0b1b3d 50%, #32579c 50%);
