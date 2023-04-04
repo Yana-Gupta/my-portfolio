@@ -18,7 +18,9 @@ const Project = () => {
             }  px-4 lg:px-12 py-8 text-center`}
           >
             <div className="w-full lg:w-1/2 mx-4">
-              <h1 className="text-2xl hidden lg:block font-semibold py-4">{project.name}</h1>
+              <h1 className="text-2xl hidden lg:block font-semibold py-4">
+                {project.name}
+              </h1>
               <p className="py-4">{project.description}</p>
               <div className="mx-auto">
                 {project.live && (
@@ -41,8 +43,10 @@ const Project = () => {
                 )}
               </div>
             </div>
-            <div className="w-full lg: w-1/2 px-4">
-              <h1 className="block lg:hidden font-semibold py-4 text-2xl">{project.name}</h1>
+            <div className="w-full lg:w-1/2 px-4">
+              <h1 className="block lg:hidden font-semibold py-4 text-2xl">
+                {project.name}
+              </h1>
               <img className="rounded-md" src={project.image} alt="" />
             </div>
           </div>
