@@ -1,11 +1,11 @@
-import Navbar from "../Navbar/Index";
-import Footer from "../Footer/Index";
-import { useState } from "react";
-import "./Index.scss";
-import { themeClass } from "../../data";
+import Navbar from "../Navbar/Index"
+import Footer from "../Footer/Index"
+import { useState } from "react"
+import "./Index.scss"
+import { themeClass } from "../../data"
 
 const Layout = ({ children }) => {
-  const [bgclass, setBgclass] = useState(themeClass[0]);
+  const [bgclass, setBgclass] = useState(themeClass[0])
   return (
     <div className={`text-white overflow-x-hidden ${bgclass.name}`}>
       <Navbar />
@@ -14,18 +14,18 @@ const Layout = ({ children }) => {
           return (
             <button
               key={index}
-              className={`${color.name} h-12 w-12 border-2 border-gery-800 my-4 rounded-full`}
+              className={`${color.name} h-10 w-10 border-2 border-gery-800 my-3 rounded-full`}
               onClick={() => {
-                setBgclass(color);
+                setBgclass(color)
               }}
             />
-          );
+          )
         })}
       </div>
       {children}
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

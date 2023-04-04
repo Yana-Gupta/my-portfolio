@@ -1,6 +1,7 @@
-import React from "react";
-import Image from "../../assets/images/graphic.png";
-import "./Index.scss";
+import React from "react"
+import Image from "../../assets/images/graphic.png"
+import "./Index.scss"
+import { language } from "../../data"
 
 const Home = () => {
   return (
@@ -29,9 +30,12 @@ const Home = () => {
       </div>
       <div id="techstack" className="">
         <h1 className="text-6xl font-semibold py-2">TechStacks 👩‍💻</h1>
+        {language.map((item) => {
+          return <span> {item.icon} </span>
+        })}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
