@@ -27,9 +27,9 @@ const Contact = () => {
   return (
     <div className="min-h-[90vh]">
       <h1
-        className={`text-2xl font-semibold mx-auto text-center mb-10 ${
+        className={`text-5xl font-semibold mx-auto text-center mb-10 ${
           success ? "hidden" : ""
-        }`}
+        } lg:text-3xl`}
       >
         Contact Me
       </h1>
@@ -44,20 +44,20 @@ const Contact = () => {
       >
         <input
           type="text"
-          className="px-2 py-2 my-2 h-10 w-96 bg-black rounded-lg"
+          className="px-4 py-2 my-2 h-16 w-2/3 bg-black rounded-lg lg:w-1/2"
           name="user_name"
           placeholder="Name"
           required
         />
         <input
           type="email"
-          className="px-2 py-2 my-2 h-10 w-96 bg-black rounded-lg"
+          className="px-4 py-2 my-2 h-16 w-2/3 bg-black rounded-lg lg:w-1/2"
           name="user_email"
           placeholder="Email"
           required
         />
         <textarea
-          className="px-2 py-2 my-2 h-36 w-96 bg-black rounded-lg"
+          className="px-4 py-2 my-2 h-44 w-2/3 bg-black rounded-lg lg:w-1/2"
           name="message"
           placeholder="Message"
           required

@@ -12,9 +12,6 @@
 
 $openSans: 'Open Sans', Helvetica, Arial, sans-serif;
 
-body {
-    font-family: $openSans;
-}
 
 $cyan: #0505A9;
 $dark: #FFFFFF;
@@ -29,7 +26,6 @@ $borderW: 2px;
     text-align: center;
     text-transform: uppercase;
     color: $cyan;
-    font-size: 16px;
     font-weight: bold;
     background-color: transparent;
     outline: none;
