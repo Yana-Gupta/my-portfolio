@@ -1,12 +1,26 @@
-#item-name{
+#item-name {
     display: none;
     z-index: 99999;
     position: relative;
     bottom: -50px;
     padding: 4px 10px;
     border-radius: 10px;
+    width: fit-content;
 }
 
-#item-name:hover{
+.icon {
+    height: 40px;
+    width: 40px;
+}
+
+.icon:hover {
+    height: 20px;
+
+    #item-name {
+        display: block;
+    }
+}
+
+#item-name:hover {
     display: block;
 }

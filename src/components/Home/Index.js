@@ -1,24 +1,29 @@
 import React from "react"
 import Image from "../../assets/images/graphic.png"
 import "./Index.scss"
+import myResume from "../../assets/documents/Yana's Resume.pdf"
 import { language } from "../../data"
 import SkillIcon from "../Skillicon/Index"
 
 const Home = () => {
   return (
     <div className="px-8 my-4 lg:pl-20 my-8">
-      <div className="flex mt-4 flex-col lg:flex-row-reverse lg:mt-20 min-h-[85vh]">
+      <div className="flex mt-4 flex-col justify-center content-center items-center lg:flex-row-reverse lg:mt-20 min-h-[85vh]">
         <div className="min-h-1/2 mx-auto lg:h-full">
           <img src={Image} alt="" className="rounded-full graphic" />
         </div>
-        <div className="mt-40 items-center w-full lg:w-1/2 lg:h-full lg:mt-0">
+        <div className="mt-20 w-full lg:w-1/2 lg:h-full lg:mt-0">
           <span>Hi👋</span>
           <h1 className="text-8xl font-semibold py-2">I'm Yana</h1>
           <p className="text-3xl font-light py-2">
             I am a Full Stack Developer. I am currently doing my B.tech in
             Information Techology at IIITM Gwalior.
           </p>
-          <a href="/" className="animated-button my-6 text-4xl">
+          <a
+            download="Yana's Resume"
+            href={myResume}
+            className="animated-button my-6 text-4xl"
+          >
             <span></span>
             <span></span>
             <span></span>

@@ -5,9 +5,9 @@ import { useState } from "react"
 const SkillIcon = ({ item }) => {
   const [show, setShow] = useState(false)
   return (
-    <IconContext.Provider value={{ size: "44" }}>
+    <IconContext.Provider value={{ size: "40" }}>
       <button
-        className="my-4"
+        className="my-5 icon"
         style={{ color: item.color, cursor: "default" }}
       >
         <div className="h-2">

@@ -26,7 +26,6 @@ import {
 } from "react-icons/si"
 import { SiLinkedin } from "react-icons/si"
 
-
 const themeClass = [
   {
     name: "blue",
@@ -149,6 +148,13 @@ const language = [
     color: "#ffff00",
   },
   {
+    name: "SiFirebase",
+    description:
+      "Firebase is a platform developed by Google for creating mobile and web applications.",
+    icon: <SiFirebase />,
+    color: "#FFCA28",
+  },
+  {
     name: "Git",
     description:
       "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
@@ -174,21 +180,21 @@ const language = [
     description:
       "Linux is a family of open source Unix-like operating systems based on the Linux kernel.",
     icon: <SiLinux />,
-    color: "#FCC624"
+    color: "#FCC624",
   },
   {
     name: "Jest",
     description:
       "Jest is a delightful JavaScript Testing Framework with a focus on simplicity.",
     icon: <SiJest />,
-    color: "#C21325"
+    color: "#C21325",
   },
   {
     name: "HeroKu",
     description:
       "Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.",
     icon: <SiHeroku />,
-    color: "#430098"
+    color: "#430098",
   },
   {
     name: "Netlify",
@@ -211,16 +217,9 @@ const language = [
     icon: <SiCplusplus />,
     color: "#044F88",
   },
-  {
-    name: "SiFirebase",
-    description:
-      "Firebase is a platform developed by Google for creating mobile and web applications.",
-    icon: <SiFirebase />,
-    color: "#FFCA28",
-  },
 ]
 
-const socials = [
+const social = [
   {
     name: "LinkedIn",
     icon: <SiLinkedin />,
@@ -235,4 +234,4 @@ const socials = [
   },
 ]
 
-export { themeClass, project, language, socials}
+export { themeClass, project, language, social }

@@ -1,7 +1,15 @@
+import { social } from "../../data";
+
 const Footer = () => {
   return (
-    <footer className="py-2 text-xl text-center footer">
-      <p className="text-white">Made with ❤️ by Yana</p>
+    <footer className="py-2 text-xl text-center footer flex items-center align-center">
+      {social.map((social, index) => {
+        return(
+          <a key={index}>
+            <i className={social.icon}>{social.icon}</i>
+          </a>
+        )
+      })}
     </footer>
   );
 };
