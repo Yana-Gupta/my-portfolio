@@ -46,10 +46,12 @@ const Project = () => {
                   id="techstack"
                   className="flex flex-col align-center justify-center"
                 >
-                  <h1 className="text-xl font-normal pt-4 text-center">TechStacks: </h1>
-                  <div className="grid grid-cols-6 align-center">
+                  <h1 className="text-xl font-normal pt-4 text-center">
+                    TechStacks used:
+                  </h1>
+                  <div className="grid grid-cols-6 align-center text-center">
                     {project.techstack.map((tech, index) => {
-                      return <SkillIcon item={tech} />
+                      return <SkillIcon item={tech} key={index} />
                     })}
                   </div>
                 </div>
@@ -97,7 +99,7 @@ const Project = () => {
                   id="techstack"
                   className="flex flex-col align-center justify-center"
                 >
-                  <h1 className="text-xl font-normal pt-4">TechStacks: </h1>
+                  <h1 className="text-xl font-normal pt-4">TechStacks used: </h1>
                   <div className="grid grid-cols-6 gap-3 place-content-center">
                     {project.techstack.map((tech, index) => {
                       return <SkillIcon key={index} item={tech} />

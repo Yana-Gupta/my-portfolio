@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Image from "../../assets/images/graphic.png"
 import "./Index.scss"
 import myResume from "../../assets/documents/Yana's Resume.pdf"
@@ -6,6 +6,9 @@ import { language } from "../../data"
 import SkillIcon from "../Skillicon/Index"
 
 const Home = () => {
+  const [btnText, setBtnText] = useState("Download Resume")
+  const [download, setDownload] = useState(false)
+
   return (
     <div className="px-8 lg:pl-20">
       <div className="flex flex-col justify-around mt-0 lg:justify-center lg:content-center lg:items-center lg:flex-row-reverse lg:mt-2 min-h-[85vh]">
@@ -22,13 +25,19 @@ const Home = () => {
           <a
             download="Yana's Resume"
             href={myResume}
-            className="animated-button my-6 text-4xl"
+            className={`animated-button my-6 ${
+              download ? `text-2xl` : `text-3xl`
+            }`}
+            onClick={() => {
+              setBtnText("Thank for downloading!")
+              setDownload(true)
+            }}
           >
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            Download Resume
+            {btnText}
           </a>
         </div>
       </div>

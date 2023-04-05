@@ -3,11 +3,11 @@ import "./Index.scss"
 
 const Footer = () => {
   return (
-    <footer className="py-4 text-center min-h-[20vh]">
+    <footer className="py-4 text-center min-h-[20vh] flex flex-col justify-end">
       <h1 className="text-2xl font-semibold py-3 uppercase tracking-wide">
         Connect With Me
       </h1>
-      <div className="flex flex-row justify-center mt-8">
+      <div className="flex flex-row items-center justify-center mt-8 mb-3">
         {social.map((item, index) => {
           return (
             <a
