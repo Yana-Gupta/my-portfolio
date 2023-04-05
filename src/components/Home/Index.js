@@ -34,9 +34,9 @@ const Home = () => {
       </div>
       <div id="techstack" className="">
         <h1 className="text-6xl font-semibold py-2 my-2">TechStacks 👩‍💻</h1>
-        <div className="grid grid-cols-4 px-2 md:grid-cols-6 px-4 lg:grid-cols-8 px-6 xl:grid-cols-9 px-8">
+        <div className="grid grid-cols-4 px-2 md:grid-cols-4 px-4 lg:grid-cols-8 px-6 xl:grid-cols-9 px-8">
           {language.map((item, index) => {
-            return <SkillIcon key={index} item={item} size={40} />
+            return <SkillIcon key={index} item={item} size={55} />
           })}
         </div>
       </div>

@@ -206,7 +206,7 @@ const language = [
     description:
       "GitHub is a web-based hosting service for version control using Git.",
     icon: <SiGithub />,
-    color: "#171515",
+    color: "#7D922A",
   },
   {
     name: "NodeJS",
@@ -234,7 +234,7 @@ const language = [
     description:
       "Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.",
     icon: <SiHeroku />,
-    color: "#430098",
+    color: "#6567a5",
   },
   {
     name: "Netlify",
@@ -265,12 +265,14 @@ const social = [
     icon: <SiLinkedin />,
     url: "https://www.linkedin.com/in/Yana-Gupta/",
     color: "#0072b1",
+    username: "in/Yana-Gupta",
   },
   {
     name: "GitHub",
     icon: <SiGithub />,
     url: "https://github.com/Yana-Gupta",
     color: "#171515",
+    username: "@Yana-Gupta",
   },
 ]
 

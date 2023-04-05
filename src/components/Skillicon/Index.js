@@ -6,7 +6,7 @@ const SkillIcon = ({ item, size }) => {
   return (
     <IconContext.Provider value={{ size: size }}>
       <button
-        className="my-4 icon"
+        className="m-4 icon"
         style={{ color: item.color, cursor: "default" }}
       >
         <div className="h-2">

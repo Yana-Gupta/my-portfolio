@@ -44,20 +44,20 @@ const Contact = () => {
       >
         <input
           type="text"
-          className="px-4 py-2 my-2 h-16 w-2/3 bg-black rounded-lg lg:w-1/2"
+          className="px-4 py-2 my-2 h-24 lg:h-16 w-2/3 bg-black rounded-lg lg:w-1/2"
           name="user_name"
           placeholder="Name"
           required
         />
         <input
           type="email"
-          className="px-4 py-2 my-2 h-16 w-2/3 bg-black rounded-lg lg:w-1/2"
+          className="px-4 py-2 my-2 h-24 lg:h-16 w-2/3 bg-black rounded-lg lg:w-1/2"
           name="user_email"
           placeholder="Email"
           required
         />
         <textarea
-          className="px-4 py-2 my-2 h-44 w-2/3 bg-black rounded-lg lg:w-1/2"
+          className="px-4 py-2 my-2 h-60 lg:h-44 w-2/3 bg-black rounded-lg lg:w-1/2"
           name="message"
           placeholder="Message"
           required
