@@ -6,8 +6,8 @@ import SkillIcon from "../Skillicon/Index"
 
 const Project = () => {
   return (
-    <div className="px-20">
-      <h1 className="text-2xl font-semibold mx-auto text-center">
+    <div className="px-20 my-8">
+      <h1 className="text-4xl font-semibold mx-auto text-center">
         My Projects
       </h1>
       {project.map((project, index) => {
@@ -15,18 +15,18 @@ const Project = () => {
           return (
             <div
               key={index}
-              className={`flex flex-col-reverse lg:flex-row-reverse px-4 lg:px-12 py-8 text-center`}
+              className={`flex flex-col-reverse my-12 lg:flex-row-reverse px-4 lg:px-12 py-8`}
             >
               <div className="w-full lg:w-1/2 mx-4">
-                <h1 className="text-2xl hidden lg:block font-semibold py-4">
+                <h1 className="text-2xl hidden lg:block font-semibold py-4 text-center">
                   {project.name}
                 </h1>
-                <p className="py-4">{project.description}</p>
-                <div className="mx-auto">
+                <p className="py-4 text-center">{project.description}</p>
+                <div className="mx-auto text-center">
                   {project.live && (
                     <Link
                       to={project.live}
-                      className="glow-on-hover1 mx-2"
+                      className="glow-on-hover1 mx-2 font-semibold"
                       type="button"
                     >
                       View Live
@@ -35,27 +35,27 @@ const Project = () => {
                   {project.code && (
                     <Link
                       to={project.code}
-                      className="glow-on-hover2 mx-2"
+                      className="glow-on-hover2 mx-2 font-semibold"
                       type="button"
                     >
                       View Code
                     </Link>
                   )}
-                  <div
-                    id="techstack"
-                    className="flex flex-col align-center justify-center"
-                  >
-                    <h1 className="text-xl font-normal pt-4">TechStacks: </h1>
-                    <div className="grid grid-cols-6 align-center">
-                      {project.techstack.map((tech, index) => {
-                        return <SkillIcon item={tech} />
-                      })}
-                    </div>
+                </div>
+                <div
+                  id="techstack"
+                  className="flex flex-col align-center justify-center"
+                >
+                  <h1 className="text-xl font-normal pt-4 text-center">TechStacks: </h1>
+                  <div className="grid grid-cols-6 align-center">
+                    {project.techstack.map((tech, index) => {
+                      return <SkillIcon item={tech} />
+                    })}
                   </div>
                 </div>
               </div>
               <div className="w-full lg:w-1/2 px-4">
-                <h1 className="block lg:hidden font-semibold py-4 text-2xl">
+                <h1 className="block lg:hidden font-semibold py-9 text-4xl">
                   {project.name}
                 </h1>
                 <img className="rounded-md" src={project.image} alt="" />
@@ -67,9 +67,9 @@ const Project = () => {
         return (
           <div
             key={index}
-            className={`flex flex-col-reverse lg:flex-row px-4 lg:px-12 py-8 text-center`}
+            className={`flex flex-col-reverse my-10 lg:flex-row px-4 lg:px-12 py-8 text-center`}
           >
-            <div className="w-full lg:w-1/2 mx-4">
+            <div className="w-full lg:w-1/2 mx-10">
               <h1 className="text-2xl hidden lg:block font-semibold py-4">
                 {project.name}
               </h1>
@@ -78,7 +78,7 @@ const Project = () => {
                 {project.live && (
                   <Link
                     to={project.live}
-                    className="glow-on-hover1 mx-2"
+                    className="glow-on-hover1 mx-2 font-semibold"
                     type="button"
                   >
                     View Live
@@ -87,7 +87,7 @@ const Project = () => {
                 {project.code && (
                   <Link
                     to={project.code}
-                    className="glow-on-hover2 mx-2"
+                    className="glow-on-hover2 mx-2 font-semibold"
                     type="button"
                   >
                     View Code
@@ -98,7 +98,7 @@ const Project = () => {
                   className="flex flex-col align-center justify-center"
                 >
                   <h1 className="text-xl font-normal pt-4">TechStacks: </h1>
-                  <div className="grid grid-cols-6 align-center ">
+                  <div className="grid grid-cols-6 gap-3 place-content-center">
                     {project.techstack.map((tech, index) => {
                       return <SkillIcon key={index} item={tech} />
                     })}
@@ -107,7 +107,7 @@ const Project = () => {
               </div>
             </div>
             <div className="w-full lg:w-1/2 px-4">
-              <h1 className="block lg:hidden font-semibold py-4 text-2xl">
+              <h1 className="block lg:hidden font-semibold py-9 text-4xl">
                 {project.name}
               </h1>
               <img className="rounded-md" src={project.image} alt="" />

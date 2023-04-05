@@ -25,7 +25,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="min-h-[90vh]">
+    <div className="min-h-[75vh]">
       <h1
         className={`text-5xl font-semibold mx-auto text-center mb-10 ${
           success ? "hidden" : ""

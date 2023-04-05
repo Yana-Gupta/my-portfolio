@@ -48,29 +48,6 @@ const themeClass = [
 
 const project = [
   {
-    name: "MBA Department Website",
-    description: "This is a website for MBA department of a university. ",
-    image: IIITM1,
-    live: "https://mba-iiitm.vercel.app/",
-    techstack: [
-      {
-        name: "NextJS",
-        icon: <SiNextdotjs />,
-        color: "#ff0000",
-      },
-      {
-        name: "Material UI",
-        icon: <SiMui />,
-        color: "#1565C0",
-      },
-      {
-        name: "TailwindCSS",
-        icon: <SiTailwindcss />,
-        color: "#38b2ac",
-      },
-    ],
-  },
-  {
     name: "Real Estate Frontend Website",
     description:
       "This is a website for Real Estate. This website shows the basic information about the property.",
@@ -87,6 +64,29 @@ const project = [
         name: "Material UI",
         icon: <SiMui />,
         color: "#1565C0",
+      },
+    ],
+  },
+  {
+    name: "MBA Department Website",
+    description: "This is a website for MBA department of a university. ",
+    image: IIITM1,
+    live: "https://mba-iiitm.vercel.app/",
+    techstack: [
+      {
+        name: "NextJS",
+        icon: <SiNextdotjs />,
+        color: "#000000",
+      },
+      {
+        name: "Material UI",
+        icon: <SiMui />,
+        color: "#1565C0",
+      },
+      {
+        name: "TailwindCSS",
+        icon: <SiTailwindcss />,
+        color: "#38b2ac",
       },
     ],
   },
@@ -150,7 +150,7 @@ const language = [
     description:
       "Next.js is an open-source React front-end development web framework that enables functionality such as server-side rendering and generating static websites for React based web applications.",
     icon: <SiNextdotjs />,
-    color: "#ff0000",
+    color: "#000000",
   },
   {
     name: "Angular",

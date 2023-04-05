@@ -3,9 +3,11 @@ import "./Index.scss"
 
 const Footer = () => {
   return (
-    <footer className="py-4 text-center">
-      <h1 className="text-3xl font-semibold py-3">Connect With Me</h1>
-      <div className="flex flex-row items-center justify-center my-2">
+    <footer className="py-4 text-center min-h-[20vh]">
+      <h1 className="text-2xl font-semibold py-3 uppercase tracking-wide">
+        Connect With Me
+      </h1>
+      <div className="flex flex-row justify-center mt-8">
         {social.map((item, index) => {
           return (
             <a
@@ -15,7 +17,9 @@ const Footer = () => {
               key={index}
               className={`mx-3 my-2 rounded-md border-1 hover:rounded-full hover:border-1 hover:border-gray-200`}
             >
-              <button className={`text-[20px] flex text-center items-center jusity-center px-2 py-1`}>
+              <button
+                className={`text-[20px] flex text-center items-center jusity-center px-4 py-2`}
+              >
                 <span>{item.icon}</span>
                 <span className="">&nbsp;{item.username}</span>
               </button>

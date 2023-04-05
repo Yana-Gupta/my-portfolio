@@ -5,7 +5,7 @@ const SkillIcon = ({ item, size }) => {
   if(size === undefined) size = "40"
   return (
     <IconContext.Provider value={{ size: size }}>
-      <button
+      <div
         className="m-4 icon"
         style={{ color: item.color, cursor: "default" }}
       >
@@ -15,7 +15,7 @@ const SkillIcon = ({ item, size }) => {
           </span>
         </div>
         {item.icon}
-      </button>
+      </div>
     </IconContext.Provider>
   )
 }

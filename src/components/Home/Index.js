@@ -8,11 +8,11 @@ import SkillIcon from "../Skillicon/Index"
 const Home = () => {
   return (
     <div className="px-8 lg:pl-20">
-      <div className="flex flex-col mt-0 justify-center content-center items-center lg:flex-row-reverse lg:mt-2 min-h-[85vh]">
-        <div className="mx-auto lg:h-full">
+      <div className="flex flex-col justify-around mt-0 lg:justify-center lg:content-center lg:items-center lg:flex-row-reverse lg:mt-2 min-h-[85vh]">
+        <div className="mx-auto lg:h-1/2">
           <img src={Image} alt="" className="rounded-full graphic" />
         </div>
-        <div className="w-full lg:w-1/2 lg:h-full">
+        <div className="w-full lg:w-1/2 lg:h-1/2">
           <span>Hi👋</span>
           <h1 className="text-8xl font-semibold">I'm Yana</h1>
           <p className="text-6xl font-light py-3 lg:text-3xl lg:py-0">
@@ -34,9 +34,9 @@ const Home = () => {
       </div>
       <div id="techstack" className="">
         <h1 className="text-6xl font-semibold py-2 my-2">TechStacks 👩‍💻</h1>
-        <div className="grid grid-cols-4 px-2 md:grid-cols-4 px-4 lg:grid-cols-8 px-6 xl:grid-cols-9 px-8">
+        <div className="grid grid-cols-4 gap-4 px-2 md:grid-cols-4 px-4 lg:grid-cols-8 px-6 xl:grid-cols-9 px-8">
           {language.map((item, index) => {
-            return <SkillIcon key={index} item={item} size={55} />
+            return <SkillIcon key={index} item={item} size={50} />
           })}
         </div>
       </div>

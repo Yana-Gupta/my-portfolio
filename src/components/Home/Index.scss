@@ -1,16 +1,14 @@
 .graphic {
-    height: 500px;
-    width: 500px;
-    margin: auto;
+    height: 400px;
+    width: 400px;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) {
     .graphic {
-        height: 700px;
-        width: 700px;
+        height: 600px;
+        width: 600px;
     }
 }
-    
 
 .animated-button {
     background: linear-gradient(-30deg, #0b1b3d 50%, #32579c 50%);
