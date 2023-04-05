@@ -7,17 +7,17 @@ const Navbar = () => {
       <h1 className="text-4xl font-bold px-6 lg:px-20 uppercase lg:text-3xl">
         Portfolio
       </h1>
-      <div className="px-20 flex lg:flex-col lg:flex-row">
+      <div className="px-20 flex flex-col lg:flex-row">
         <NavLink
           to="/"
-          className="px-8 font-normal text-xl"
+          className="px-8 font-normal text-2xl lg:text-xl py-2"
           activeclassname="active"
         >
           Home
         </NavLink>
         <NavLink
           to="/project"
-          className="px-8 font-normal text-xl"
+          className="px-8 font-normal text-2xl lg:text-xl py-2"
           activeclassname="active"
         >
           Projects
