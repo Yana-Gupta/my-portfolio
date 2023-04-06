@@ -188,7 +188,7 @@ const language = [
     color: "#ffff00",
   },
   {
-    name: "SiFirebase",
+    name: "Firebase",
     description:
       "Firebase is a platform developed by Google for creating mobile and web applications.",
     icon: <SiFirebase />,
