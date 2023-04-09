@@ -12,10 +12,10 @@ const Home = () => {
   return (
     <div className="px-8 lg:pl-20">
       <div className="flex flex-col justify-around mt-0 lg:justify-center lg:content-center lg:items-center lg:flex-row-reverse lg:mt-2 min-h-[85vh]">
-        <div className="mx-auto lg:h-1/2">
-          <img src={Image} alt="" className="rounded-full graphic" />
+        <div className="mx-auto my-auto">
+          <img src={Image} alt="" className="rounded-full graphic lg:p-10" />
         </div>
-        <div className="w-full lg:w-1/2 lg:h-1/2">
+        <div className="w-full lg:w-1/2">
           <span>Hi👋</span>
           <h1 className="text-8xl font-semibold">I'm Yana</h1>
           <p className="text-6xl font-light py-3 lg:text-3xl lg:py-0">
