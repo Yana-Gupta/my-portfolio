@@ -29,7 +29,7 @@ const Home = () => {
               download ? `text-2xl` : `text-3xl`
             }`}
             onClick={() => {
-              setBtnText("Thank for downloading!")
+              setBtnText("Thanks for downloading!")
               setDownload(true)
             }}
           >
