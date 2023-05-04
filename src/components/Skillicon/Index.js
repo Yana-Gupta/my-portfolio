@@ -10,7 +10,7 @@ const SkillIcon = ({ item, size }) => {
         style={{ color: item.color, cursor: "default" }}
       >
         <div className="h-2">
-          <span id="item-name" className={`absoulte bottom-0 left-0 bg-[#69455b] z-[99999]`}>
+          <span id="item-name" className={`absoulte bottom-0 left-0 bg-[#69455b] z-[99999] text-[#ffff00]`}>
             {item.name}
           </span>
         </div>

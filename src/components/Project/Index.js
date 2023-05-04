@@ -7,7 +7,7 @@ import SkillIcon from "../Skillicon/Index"
 const Project = () => {
   return (
     <div className="px-20 my-8">
-      <h1 className="text-4xl font-semibold mx-auto text-center">
+      <h1 className="text-6xl font-semibold mx-auto text-center">
         My Projects
       </h1>
       {project.map((project, index) => {
@@ -15,13 +15,13 @@ const Project = () => {
           return (
             <div
               key={index}
-              className={`flex flex-col-reverse my-12 lg:flex-row-reverse px-4 lg:px-12 py-8`}
+              className={`flex flex-col-reverse my-12 laptop:flex-row-reverse px-4 lg:px-12 py-8 text-center`}
             >
               <div className="w-full lg:w-1/2 mx-4">
-                <h1 className="text-2xl hidden lg:block font-semibold py-4 text-center">
+                <h1 className=" text-3xl hidden lg:block font-semibold py-4 text-center">
                   {project.name}
                 </h1>
-                <p className="py-4 text-center">{project.description}</p>
+                <p className="py-8 text-center text-xl	">{project.description}</p>
                 <div className="mx-auto text-center">
                   {project.live && (
                     <Link
@@ -66,16 +66,18 @@ const Project = () => {
           )
         }
 
+
+
         return (
           <div
             key={index}
             className={`flex flex-col-reverse my-10 lg:flex-row px-4 lg:px-12 py-8 text-center`}
           >
             <div className="w-full lg:w-1/2 mx-10">
-              <h1 className="text-2xl hidden lg:block font-semibold py-4">
+              <h1 className="text-3xl hidden lg:block font-semibold py-4 text-center">
                 {project.name}
               </h1>
-              <p className="py-4">{project.description}</p>
+              <p className="py-8 text-xl	">{project.description}</p>
               <div className="mx-auto">
                 {project.live && (
                   <Link
