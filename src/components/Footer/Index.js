@@ -4,7 +4,7 @@ import "./Index.scss"
 const Footer = () => {
   return (
     <footer className="py-2 text-center min-h-[50px] flex flex-row align-center justify-around items-center mt-24 bg-[#04264E]">
-      <h1 className="text-2xl font-semibold py-3 uppercase tracking-wide ">
+      <h1 className="text-2xl font-semibold py-3 uppercase tracking-wide text-[#ffffff]">
         Socials 🌐
       </h1>
       <div className="flex flex-row items-center justify-center">
