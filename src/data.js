@@ -24,8 +24,13 @@ import {
   SiFirebase,
   SiCplusplus,
   SiMui,
+  SiPython,
+  SiFastapi,
+  SiEthereum
 } from "react-icons/si"
-import { SiLinkedin } from "react-icons/si"
+
+import { TfiLinkedin, TfiGithub, TfiInstagram, TfiTwitter } from "react-icons/tfi"
+
 
 const themeClass = [
   {
@@ -140,10 +145,16 @@ const language = [
     color: "#1572B6",
   },
   {
-    name: "React",
-    description: "React is a JavaScript library for building user interfaces.",
-    icon: <SiReact />,
-    color: "#61DAFB",
+    name: "Python",
+    description: "Python is an interpreted, high-level and general-purpose programming language.",
+    icon: <SiPython />,
+    color: "#3776AB",
+  },
+  {
+    name: "FastAPI",
+    description: "FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.",
+    icon: <SiFastapi />,
+    color: "#009688",
   },
   {
     name: "NextJS",
@@ -153,11 +164,16 @@ const language = [
     color: "#000000",
   },
   {
-    name: "Angular",
-    description:
-      "Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations.",
-    icon: <SiAngular />,
-    color: "#003366",
+    name: "React",
+    description: "React is a JavaScript library for building user interfaces.",
+    icon: <SiReact />,
+    color: "#61DAFB",
+  },
+  {
+    name: "Ethereum",
+    description: "Ethereum is a decentralized, open-source blockchain with smart contract functionality.",
+    icon: <SiEthereum />,
+    color: "#3C3C3D",
   },
   {
     name: "SASS",
@@ -179,6 +195,13 @@ const language = [
       "MongoDB is a cross-platform document-oriented database program.",
     icon: <SiMongodb />,
     color: "#589636",
+  },
+  {
+    name: "Angular",
+    description:
+      "Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations.",
+    icon: <SiAngular />,
+    color: "#003366",
   },
   {
     name: "PostgreSQL",
@@ -262,18 +285,32 @@ const language = [
 const social = [
   {
     name: "LinkedIn",
-    icon: <SiLinkedin />,
+    icon: <TfiLinkedin />,
     url: "https://www.linkedin.com/in/Yana-Gupta/",
     color: "#0072b1",
     username: "in/Yana-Gupta",
   },
   {
     name: "GitHub",
-    icon: <SiGithub />,
+    icon: <TfiGithub />,
     url: "https://github.com/Yana-Gupta",
     color: "#171515",
     username: "@Yana-Gupta",
   },
+  {
+    name: "Instagram",
+    icon: <TfiInstagram />,
+    url: "https://www.instagram.com/yana_guptta/",
+    color: "#E1306C",
+    username: "@yana_guptta",
+  },
+  {
+    name: "Twitter",
+    icon: <TfiTwitter />,
+    url: "https://twitter.com/yana_guptta",
+    color: "#1DA1F2",
+    username: "@yana_guptta",
+  }
 ]
 
 export { themeClass, project, language, social }

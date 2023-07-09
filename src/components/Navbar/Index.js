@@ -10,17 +10,24 @@ const Navbar = () => {
       <div className="px-20 flex flex-col lg:flex-row">
         <NavLink
           to="/"
-          className="px-8 font-normal text-2xl lg:text-xl py-2"
+          className="px-8 font-normal text-2xl lg:text-xl py-2 w-32"
           activeclassname="active"
         >
           Home
         </NavLink>
         <NavLink
           to="/project"
-          className="px-8 font-normal text-2xl lg:text-xl py-2"
+          className="px-8 font-normal text-2xl lg:text-xl py-2 w-32"
           activeclassname="active"
         >
           Projects
+        </NavLink>
+        <NavLink
+          to="/experience"
+          className="px-8 font-normal text-2xl lg:text-xl py-2 w-32"
+          activeclassname="active"
+        >
+          Experience
         </NavLink>
       </div>
       <NavLink
@@ -37,10 +44,6 @@ const Navbar = () => {
           </span>
         </span>
       </NavLink>
-
-      {/* <button className="bg-blue-700 mx-20 px-4 py-2 rounded-full	text-white border-2 border-blue-800">
-        Let's talk
-      </button> */}
     </nav>
   )
 }

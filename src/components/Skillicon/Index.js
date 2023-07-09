@@ -2,11 +2,16 @@ import "./Index.scss"
 import { IconContext } from "react-icons"
 
 const SkillIcon = ({ item, size }) => {
-  if(size === undefined) size = "40"
+
+  if (size === undefined) {
+    if (window.innerWidth > 768) size = "50"
+    if (window.innerWidth <= 768) size = "60"
+  }
+
   return (
     <IconContext.Provider value={{ size: size }}>
       <div
-        className="m-4 icon"
+        className="mx-4 my-10 lg:my-4 icon"
         style={{ color: item.color, cursor: "default" }}
       >
         <div className="h-2">

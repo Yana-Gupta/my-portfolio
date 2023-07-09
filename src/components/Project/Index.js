@@ -6,8 +6,8 @@ import SkillIcon from "../Skillicon/Index"
 
 const Project = () => {
   return (
-    <div className="px-20 my-8">
-      <h1 className="text-6xl sm:text-8xl font-semibold mx-auto text-center">
+    <div className="px-20 py-8">
+      <h1 className="text-4xl sm:text-8xl font-semibold mx-auto text-center py-4">
         My Projects
       </h1>
       {project.map((project, index) => {

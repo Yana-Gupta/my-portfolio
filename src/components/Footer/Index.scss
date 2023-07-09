@@ -1,7 +1,21 @@
-#social-1 {
-    background-color: #0072b1;
+.social {
+    backgrond-color: none;
+    transition: background-color 1s linear;
+
+    div {
+        p {
+            display: none;
+        }
+    }
 }
 
-#social-2 {
-    background-color: #7D922A;
+.social:hover,
+.social:focus {
+    background-color: rgb(157, 162, 168);
+
+    div {
+        p {
+            display: inline-block;
+        }
+    }
 }
