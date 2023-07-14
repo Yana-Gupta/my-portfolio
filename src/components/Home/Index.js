@@ -46,7 +46,7 @@ const Home = () => {
       </div>
       <div id="techstack" className="my-10">
         <h1 className="text-6xl font-semibold py-2 my-6">TechStacks 👩‍💻</h1>
-        <div className="grid mobile:grid-cols-4 laptop:grid-cols-8 desktop:grid-cols-9 px-6 xl:grid-cols-9 gap-4 px-8">
+        <div className="grid mobile:grid-cols-4 tablet:grid-cols-6 laptop:grid-cols-8 desktop:grid-cols-9 px-6 xl:grid-cols-9 gap-4 px-8">
           {language.map((item, index) => {
             return <SkillIcon key={index} item={item} />
           })}

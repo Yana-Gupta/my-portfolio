@@ -50,9 +50,11 @@ const Project = () => {
                     TechStacks used:
                   </h1>
                   <div className="grid grid-cols-6 align-center text-center">
-                    {project.techstack.map((tech, index) => {
-                      return <SkillIcon item={tech} key={index} />
-                    })}
+                    {project.techstack.map((tech, index) =>
+                    (
+                      <SkillIcon item={tech} key={index} />
+                    )
+                    )}
                   </div>
                 </div>
               </div>

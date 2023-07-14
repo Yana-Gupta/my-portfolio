@@ -3,10 +3,10 @@ import "./Index.scss"
 
 const Footer = () => {
   return (
-    <footer className="py-2 text-center flex flex-row justify-between lg:justify-around items-center align-center min-h-[10vh]">
-      <h1 className="font-semibold text-4xl ml-32 lg:ml-0 w-1/2">Socials 📫</h1>
+    <footer className="py-8 mt-24 text-center flex flex-row items-center min-h-[10vh] mx-8 lg:mx-20">
+      <h1 className="font-semibold text-7xl lg:ml-0 flex-1 text-start whitespace-nowrap"> Connect With Me 📫</h1>
 
-      <div className="flex flex-col lg:flex-row items-start justify-start w-1/2">
+      <div className="flex flex-col lg:flex-row items-end justify-end grow">
         {social.map((item, index) => {
           return (
             <a
