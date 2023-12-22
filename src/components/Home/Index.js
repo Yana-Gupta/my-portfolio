@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Image from "../../assets/images/graphic.png"
 import "./Index.scss"
-import myResume from "../../assets/documents/Yana's Resume.pdf"
+import myResume from "../../assets/pdf/Yana_Gupta.pdf"
 import { language } from "../../data"
 import SkillIcon from "../Skillicon/Index"
 
